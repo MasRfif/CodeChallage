@@ -9,12 +9,13 @@ export default function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-        }}>
+        }}
+      >
         <div className="hero-overlay h-screen dark:bg-[#421608]/65 md:p-5 rounded-b-[50px] bg-gradient-to-t from-transparent/5 via-transparent to-amber-900/95">
           <div className="hero-content text-neutral-content t p-10 flex items-center justify-center h-full">
             <div className="p-10 max-w-full h-full text-[#f8993f] rounded-xl">
               <div className="my-40 sm:my-64 ">
-                <h1 className="mb-5 mr- text-4xl md:text-7xl md:mb-20 font-bold">
+                <h1 className="mb-5 mr- text-4xl md:text-7xl md:mb-10 font-bold">
                   Hey there Did you Know?
                 </h1>
                 <p className="mb-9 text-md md:text-3xl ">
@@ -22,7 +23,7 @@ export default function Hero() {
                   develop problem-solving skills. A well-chosen toy can make
                   your cat feel loved and secure.
                 </p>
-                <button className="btn btn-primary text-md sm:text-2xl ">
+                <button className="btn text-[#fffbeb] bg-[#904210] text-md sm:text-2xl ">
                   curious ? let's start buying
                 </button>
               </div>
@@ -30,21 +31,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <section>
-        <div className="relative w-full h-48 p-5 static">
-          <div className=" items-center justify-center h-full text-3xl font-bold text-[#fffbeb] text-gray-800">
-            <div className="animate-slide-up-1">
-              <p className="mb-4">Slide 1: Hello, world!</p>
-            </div>
-            <div className="animate-slide-up-2">
-              <p className="mb-4">Slide 2: This is a text carousel!</p>
-            </div>
-            <div className="animate-slide-up-3">
-              <p className="mb-4">Slide 3: Made with Tailwind CSS!</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
