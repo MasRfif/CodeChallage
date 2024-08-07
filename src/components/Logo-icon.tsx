@@ -7,7 +7,7 @@ export default function Logo({ className }: { className: string }) {
         src="/logo.svg"
         alt="Paws"
         width={100}
-        height={50}
+        height={500}
         className="w-10 "
       />
     </div>
