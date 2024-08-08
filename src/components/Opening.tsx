@@ -17,14 +17,14 @@ function Opening() {
         <div className="max-w-[1100px] absolute p-4 m-4 flex flex-col items-center">
           <Link
             href="/Home"
-            className="flex items-center space-x-3 m-10 sm:m-2 rtl:space-x-reverse  animate__animated animate__backInDown animate__delay-1s"
+            className="flex items-center space-x-3 m-10 sm:m-2 rtl:space-x-reverse  animate__animated animate__backInDown "
           >
             <Logo className="h-10" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               PurrfectPaws
             </span>
           </Link>
-          <h1 className="font-bold text-center text-4xl drop-shadow-2xl rounded-br-[20rem] sm:text-left animate__animated animate__backInDown ">
+          <h1 className="font-bold text-center text-4xl drop-shadow-2xl rounded-br-[20rem] sm:text-left animate__animated animate__backInDown animate__delay-1s">
             <span className="text-orange-500 cursor-pointer hover:underline">
               Cat
             </span>{" "}
@@ -52,9 +52,9 @@ function Opening() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
@@ -68,9 +68,9 @@ function Opening() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
