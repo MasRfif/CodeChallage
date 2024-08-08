@@ -5,6 +5,48 @@ export default function Page() {
       <section>
         <Hero />
       </section>
+      <section className="py-10 hidden sm:block">
+        <div className="carousel w-full ">
+          <div id="item1" className="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+              className="w-full"
+            />
+          </div>
+          <div id="item2" className="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+              className="w-full"
+            />
+          </div>
+          <div id="item3" className="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+              className="w-full"
+            />
+          </div>
+          <div id="item4" className="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+              className="w-full"
+            />
+          </div>
+        </div>
+        <div className="flex w-full justify-center gap-2 py-2">
+          <a href="#item1" className="btn btn-xs">
+            1
+          </a>
+          <a href="#item2" className="btn btn-xs">
+            2
+          </a>
+          <a href="#item3" className="btn btn-xs">
+            3
+          </a>
+          <a href="#item4" className="btn btn-xs">
+            4
+          </a>
+        </div>
+      </section>
       <section className="p-10 mx-9 pl-10 flex flex-col items-center gap-10 sm:gap-80 sm:flex-row ">
         <div className="flex flex-col items-center sm:flex-row">
           <div className="carousel rounded-box w-64">
@@ -68,7 +110,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center sm:flex-row-reverse   sm:flex-row">
+        <div className="flex flex-col-reverse items-center  sm:flex-row-reverse sm:flex-row">
           <div className="carousel rounded-box w-64">
             <div className="carousel-item w-full">
               <img

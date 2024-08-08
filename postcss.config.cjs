@@ -2,8 +2,7 @@
 const config = {
   plugins: {
     tailwindcss: {},
-    require('daisyui'),
   },
 };
 
-export default config;
+module.exports = config;

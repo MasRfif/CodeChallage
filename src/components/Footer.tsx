@@ -2,9 +2,9 @@
 
 export default function Footer() {
   return (
-    <footer className="footer bg-base-300 text-base-content bg-[#904210] p-10 rounded-t-[50px] ">
+    <footer className="footer text-base-content bg-[#904210] p-10 rounded-t-[50px] animate__animated animate__zoomInUp animate_delay animate__delay-4s ">
       <nav>
-        <h6 className="footer-title  text-[#fad54f]">Services</h6>
+        <h6 className="footer-title text-[#fad54f]">Services</h6>
         <a className="link link-hover text-[#fdf4c8]">Branding</a>
         <a className="link link-hover text-[#fdf4c8]">Design</a>
         <a className="link link-hover text-[#fdf4c8]">Marketing</a>

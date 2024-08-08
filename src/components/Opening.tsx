@@ -5,18 +5,18 @@ import Link from "next/link";
 
 function Opening() {
   return (
-    <section id="hero" className="w-full h-[950px]self-center overflow-hidden">
+    <section id="hero" className="w-full h-screen  self-center overflow-hidden">
       <Image
-        className="top-0 left-0 object-cover"
+        className="top-0 left-0 fixed object-cover"
         src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="/"
         fill={true}
       />
-      <div className="bg-orange-950/80 absolute top-0 left-0 w-full h-screen" />
+      <div className="bg-orange-950/80 absolute h-[100vh] top-0 left-0 w-full" />
       <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center text-slate-100">
         <div className="max-w-[1100px] absolute p-4 m-4 flex flex-col items-center">
           <Link
-            href="/Home"
+            href="/home"
             className="flex items-center space-x-3 m-10 sm:m-2 rtl:space-x-reverse  animate__animated animate__backInDown "
           >
             <Logo className="h-10" />
@@ -39,7 +39,7 @@ function Opening() {
             <span className="text-orange-500">care</span>.
           </p>
           <Link
-            href={"/Home"}
+            href={"/home"}
             className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#fddaab] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#451a03] group animate__animated animate__backInUp animate__delay-3s"
           >
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#d87607] group-hover:h-full"></span>

@@ -3,21 +3,22 @@
 import Logo from "./Logo-icon";
 import Link from "next/link";
 import { useState } from "react";
+import "animate.css";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/Home/about" },
-    { name: "Product", href: "/Home/services" },
-    { name: "Teams", href: "/Home/Teams" },
+    { name: "Home", href: "/home" },
+    { name: "About", href: "/about" },
+    { name: "Product", href: "/product" },
+    { name: "Teams", href: "/teams" },
   ];
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-amber-900/20 fixed top-0 left-0 right-0 mx-auto max-w-screen-xl px-4 py-2 rounded-xl">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="bg-white border-gray-200 dark:bg-amber-900/20 fixed top-0 left-0 right-0 z-20 mx-auto max-w-screen-xl px-4 py-2 backdrop-blur rounded-xl animate__animated animate__zoomInDown animate_delay animate__delay-4s">
+        <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
