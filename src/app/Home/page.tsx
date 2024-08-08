@@ -6,7 +6,7 @@ export default function Page() {
         <Hero />
       </section>
       <section className="py-10 hidden sm:block">
-        <div className="carousel w-full ">
+        <div className="carousel w-full rounded-3xl ">
           <div id="item1" className="carousel-item w-full">
             <img
               src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
@@ -47,7 +47,7 @@ export default function Page() {
           </a>
         </div>
       </section>
-      <section className="p-10 mx-9 pl-10 flex flex-col items-center gap-10 sm:gap-80 sm:flex-row ">
+      <section className=" px-10 pb-10 mx-9 flex flex-col items-center gap-10 sm:gap-80 sm:flex-row ">
         <div className="flex flex-col items-center sm:flex-row">
           <div className="carousel rounded-box w-64">
             <div className="carousel-item w-full ">
@@ -173,6 +173,24 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <div className="p-10 text-center ">
+        <h1 className="text-2xl pb-10 ">Come Visit Us!</h1>
+        <div className="relative w-full p-5 h-96">
+          <iframe
+            width="1723"
+            height="403"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=1523&height=403&hl=en&q=Lebakbulus%20Jakarta%20selatan+(PurrfectPaws)&t=k&z=13&ie=UTF8&iwloc=B&output=embed"></iframe>{" "}
+          <a href="https://www.acadoo-medizin.com/">www.acadoo-medizin.com</a>{" "}
+          <script
+            type="text/javascript"
+            src="https://embedmaps.com/google-maps-authorization/script.js?id=75389aba063f0e948f51568095c68a4dcc555fb8"></script>
+        </div>
+      </div>
     </>
   );
 }

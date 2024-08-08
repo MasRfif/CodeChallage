@@ -9,21 +9,20 @@ export default function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-        }}
-      >
+        }}>
         <div className="hero-overlay h-screen dark:bg-[#421608]/65 md:p-5 rounded-b-[50px] bg-gradient-to-t from-transparent/5 via-transparent to-amber-900/95">
           <div className="hero-content text-neutral-content t p-10 flex items-center justify-center h-full">
             <div className="p-10 max-w-full h-full text-[#f8993f] rounded-xl">
               <div className="my-40 sm:my-64 ">
-                <h1 className="mb-5 mr- text-4xl md:text-7xl md:mb-10 font-bold">
+                <h1 className="mb-5 mr- text-4xl md:text-7xl md:mb-10 font-bold animate__animated animate__flipInX animate__delay-1s">
                   Hey there Did you Know?
                 </h1>
-                <p className="mb-9 text-md md:text-3xl ">
+                <p className="mb-9 text-md md:text-3xl animate__animated animate__flipInX animate__delay-2s ">
                   that cats love toys? They provide mental stimulation and help
                   develop problem-solving skills. A well-chosen toy can make
                   your cat feel loved and secure.
                 </p>
-                <button className="btn text-[#fffbeb] bg-[#904210] text-md sm:text-2xl ">
+                <button className="btn text-[#fffbeb] bg-[#904210] text-md sm:text-2xl animate__animated animate__zoomInLeft animate__delay-4s ">
                   curious ? let's start buying
                 </button>
               </div>

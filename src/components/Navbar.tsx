@@ -17,12 +17,11 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-amber-900/20 fixed top-0 left-0 right-0 z-20 mx-auto max-w-screen-xl px-4 py-2 backdrop-blur rounded-xl animate__animated animate__zoomInDown animate_delay animate__delay-4s">
+      <nav className="bg-white border-gray-200 dark:bg-amber-900/20 fixed top-0 left-0 right-0 z-20 mx-auto max-w-screen-xl px-4 py-2 backdrop-blur rounded-xl animate__animated animate__zoomInDown animate_delay animate__delay-2s">
         <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
+            className="flex items-center space-x-3 rtl:space-x-reverse">
             <Logo className="h-10" />
             <span className="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-[#fffbeb]">
               PurrfectPaws
@@ -31,23 +30,20 @@ export default function NavBar() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              className="text-[#fffbeb] bg-orange-950 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-950 dark:hover:bg-amber-700 dark:focus:ring-yellow-900"
-            >
+              className="text-[#fffbeb] bg-orange-950 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-950 dark:hover:bg-amber-700 dark:focus:ring-yellow-900">
               Login
             </button>
             <button
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-amber-950 dark:focus:ring-gray-600"
-              onClick={() => setIsOpen(!isOpen)}
-            >
+              onClick={() => setIsOpen(!isOpen)}>
               <span className="sr-only">Open main menu</span>
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 17 14"
-              >
+                viewBox="0 0 17 14">
                 <path
                   stroke="currentColor"
                   strokeLinecap="round"
@@ -65,8 +61,7 @@ export default function NavBar() {
                 <li key={index} className="flex items-center">
                   <Link
                     href={menu.href}
-                    className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}
-                  >
+                    className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}>
                     {menu.name}
                   </Link>
                 </li>

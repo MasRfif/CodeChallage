@@ -1,39 +1,37 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+"use client";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { useEffect, useState } from "react";
 
-import "./globals.css";
+const Carousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const images = [
+    "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+    "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+    "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+    "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+  ];
 
-export default function MediaAuto() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Increased interval time to 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
+    <div className="carousel rounded-box w-64">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`carousel-item w-full ${
+            index === activeIndex ? "active" : ""
+          }`}>
+          <img src={image} className="w-full" alt="Carousel item" />
+        </div>
+      ))}
+    </div>
   );
-}
+};
+
+export default Carousel;
