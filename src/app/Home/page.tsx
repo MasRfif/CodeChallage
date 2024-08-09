@@ -100,17 +100,19 @@ export default function Page() {
               />
             </div>
           </div>
-          <div className="p-5 pr-5 max-w-md">
-            <h1 className="text-2xl">lorem</h1>
+          <div className="p-5 pr-5 max-w-md ">
+            <h1 className="text-2xl p-2 font-bold text-[#ead19f]">
+              Toy Product
+            </h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-              illum iusto, eum vel fugiat, eligendi debitis voluptas magnam ad
-              officia praesentium tenetur at excepturi, molestiae nihil iure
-              magni asperiores porro.
+              Discover our wide variety of toys, including interactive puzzles,
+              educational toys, and soft plush animals. Our collection caters to
+              all ages and interests, ensuring your little ones have fun and
+              learn at the same time.
             </p>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center  sm:flex-row-reverse sm:flex-row">
+        <div className="flex flex-col-reverse items-center sm:flex-row-reverse sm:flex-row">
           <div className="carousel rounded-box w-64">
             <div className="carousel-item w-full">
               <img
@@ -154,7 +156,7 @@ export default function Page() {
                 alt="Tailwind CSS Carousel component"
               />
             </div>
-            <div className="carousel-item w-full">
+            <div className="carousel-item w-full ">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
                 className="w-full"
@@ -163,34 +165,35 @@ export default function Page() {
             </div>
           </div>
           <div className="p-5 pr-5 max-w-md text-right">
-            <h1 className="text-2xl">Please</h1>
+            <h1 className="text-2xl p-2 font-bold text-[#ead19f] sm:font-bold sm:text-[#ead19f]">
+              Food Product
+            </h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-              illum iusto, eum vel fugiat, eligendi debitis voluptas magnam ad
-              officia praesentium tenetur at excepturi, molestiae nihil iure
-              magni asperiores porro.
+              Cats need a balanced diet to stay healthy. Our cat food provides
+              essential nutrients, using high-quality ingredients like organic,
+              non-GMO, and gluten-free options. We offer a range of flavors and
+              textures to suit different tastes and dietary needs. With
+              eco-friendly packaging and strict safety standards, our products
+              ensure your cat enjoys a nutritious, delicious meal that supports
+              their overall well-being.
             </p>
           </div>
         </div>
       </section>
-      <div className="p-10 text-center ">
-        <h1 className="text-2xl pb-10 ">Come Visit Us!</h1>
-        <div className="relative w-full p-5 h-96">
-          <iframe
-            width="1723"
-            height="403"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?width=1523&height=403&hl=en&q=Lebakbulus%20Jakarta%20selatan+(PurrfectPaws)&t=k&z=13&ie=UTF8&iwloc=B&output=embed"></iframe>{" "}
-          <a href="https://www.acadoo-medizin.com/">www.acadoo-medizin.com</a>{" "}
-          <script
-            type="text/javascript"
-            src="https://embedmaps.com/google-maps-authorization/script.js?id=75389aba063f0e948f51568095c68a4dcc555fb8"></script>
+      <section className="location w-full h-full py-10">
+        <div className="max-w-lg font-cousine me-0 text-center md:text-start md:me-auto md:mx-20 mb-2">
+          <h1 className="text-2xl md:text-3xl font-bold ">
+            Our <span className="text-third">Location</span>
+          </h1>
         </div>
-      </div>
+        <iframe
+          width="1440"
+          height="400"
+          className="w-full"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=taman%20sari%201%20nomor%2026%20b%20lebakbulus%20Jakarta%20selatan+(Purfectpaws)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </section>
     </>
   );
 }

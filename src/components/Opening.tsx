@@ -16,7 +16,7 @@ function Opening() {
       <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center text-slate-100">
         <div className="max-w-[1100px] absolute p-4 m-4 flex flex-col items-center">
           <Link
-            href="/home"
+            href="/Home"
             className="flex items-center space-x-3 m-10 sm:m-2 rtl:space-x-reverse  animate__animated animate__backInDown "
           >
             <Logo className="h-10" />
@@ -39,7 +39,7 @@ function Opening() {
             <span className="text-orange-500">care</span>.
           </p>
           <Link
-            href={"/home"}
+            href={"/Home"}
             className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-[#fddaab] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#451a03] group animate__animated animate__backInUp animate__delay-3s"
           >
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#d87607] group-hover:h-full"></span>

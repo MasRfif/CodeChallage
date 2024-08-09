@@ -31,103 +31,103 @@ export function RandomUserProvider({ children }: { children: ReactNode }) {
           const testimonials = [
             {
               testimonies:
-                "I recently purchased a beautiful handcrafted coffee table from Nyoo Kayu Woodworking. The quality is exceptional, and it adds a rustic charm to my living room. Highly recommended!",
+                "I recently purchased a beautiful handcrafted cat bed from My Feline Woodworking. The quality is exceptional, and it adds a cozy charm to my living room. Highly recommended!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking created a custom bookshelf for my home office. The craftsmanship is outstanding, and they perfectly matched the wood to my existing furniture. Great service!",
+                "My Feline Woodworking created a custom cat tree for my home office. The craftsmanship is outstanding, and they perfectly matched the wood to my existing furniture. Great service!",
             },
             {
               testimonies:
-                "I had an old rocking chair that was falling apart, and Nyoo Kayu Woodworking repaired it to perfection. It looks and feels brand new again. Amazing repair service!",
+                "I had an old rocking cat chair that was falling apart, and My Feline Woodworking repaired it to perfection. It looks and feels brand new again. Amazing repair service!",
             },
             {
               testimonies:
-                "The dining table we ordered from Nyoo Kayu Woodworking is stunning. The finish is flawless, and it's become the centerpiece of our dining room. Excellent quality and craftsmanship.",
+                "The cat dining table we ordered from My Feline Woodworking is stunning. The finish is flawless, and it's become the centerpiece of our dining room. Excellent quality and craftsmanship.",
             },
             {
               testimonies:
-                "I requested a custom-made wooden bed frame, and Nyoo Kayu Woodworking delivered beyond my expectations. The attention to detail and the quality of wood used are top-notch. Fantastic work!",
+                "I requested a custom-made wooden cat bed frame, and My Feline Woodworking delivered beyond my expectations. The attention to detail and the quality of wood used are top-notch. Fantastic work!",
             },
             {
               testimonies:
-                "Our antique dresser needed some serious restoration, and Nyoo Kayu Woodworking did an incredible job. It looks better than it did originally. Superb restoration service!",
+                "Our antique cat dresser needed some serious restoration, and My Feline Woodworking did an incredible job. It looks better than it did originally. Superb restoration service!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking's ready-to-use bookshelf is perfect for our study. It's sturdy, well-finished, and arrived in perfect condition. Couldn't be happier with the purchase.",
+                "My Feline Woodworking's ready-to-use cat tree is perfect for our study. It's sturdy, well-finished, and arrived in perfect condition. Couldn't be happier with the purchase.",
             },
             {
               testimonies:
-                "We ordered a custom dining set, and Nyoo Kayu Woodworking crafted it beautifully. The set is elegant and exactly what we envisioned. Outstanding custom woodworking!",
+                "We ordered a custom cat dining set, and My Feline Woodworking crafted it beautifully. The set is elegant and exactly what we envisioned. Outstanding custom woodworking!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking repaired our old wooden wardrobe, which had a broken door and loose hinges. They restored it to its former glory. Exceptional repair service!",
+                "My Feline Woodworking repaired our old wooden cat wardrobe, which had a broken door and loose hinges. They restored it to its former glory. Exceptional repair service!",
             },
             {
               testimonies:
-                "I bought a finished wooden bench from Nyoo Kayu Woodworking for our garden. It's not only aesthetically pleasing but also very durable. A great addition to our outdoor space.",
+                "I bought a finished wooden bench from My Feline Woodworking for our garden. It's not only aesthetically pleasing but also very durable. A great addition to our outdoor space.",
             },
             {
               testimonies:
-                "The custom wooden picture frames we ordered are perfect. Nyoo Kayu Woodworking did a fantastic job matching them to our decor. Highly satisfied!",
+                "The custom wooden picture frames we ordered are perfect. My Feline Woodworking did a fantastic job matching them to our decor. Highly satisfied!",
             },
             {
               testimonies:
-                "We needed a unique gift for a friend's housewarming, and Nyoo Kayu Woodworking's custom wall art was the perfect choice. Beautiful craftsmanship!",
+                "We needed a unique gift for a friend's housewarming, and My Feline Woodworking's custom wall art was the perfect choice. Beautiful craftsmanship!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking's team built a fantastic custom closet organizer for us. It's incredibly functional and looks great. Highly recommend their custom services!",
+                "My Feline Woodworking's team built a fantastic custom cat closet organizer for us. It's incredibly functional and looks great. Highly recommend their custom services!",
             },
             {
               testimonies:
-                "I had a broken antique cabinet that I thought was beyond repair, but Nyoo Kayu Woodworking restored it to its original beauty. Their repair skills are unmatched.",
+                "I had a broken antique cat cabinet that I thought was beyond repair, but My Feline Woodworking restored it to its original beauty. Their repair skills are unmatched.",
             },
             {
               testimonies:
-                "Our new kitchen island from Nyoo Kayu Woodworking is both beautiful and functional. The craftsmanship is superb, and it was delivered on time. Excellent product!",
+                "Our new kitchen island from My Feline Woodworking is both beautiful and functional. The craftsmanship is superb, and it was delivered on time. Excellent product!",
             },
             {
               testimonies:
-                "The outdoor wooden swing we bought from Nyoo Kayu Woodworking is now the favorite spot in our garden. It's sturdy, comfortable, and looks fantastic. Great addition!",
+                "The outdoor wooden swing we bought from My Feline Woodworking is now the favorite spot in our garden. It's sturdy, comfortable, and looks fantastic. Great addition!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking made a custom mantelpiece for our fireplace. It has transformed the room with its elegance and quality. Couldn't be happier with the result!",
+                "My Feline Woodworking made a custom mantelpiece for our fireplace. It has transformed the room with its elegance and quality. Couldn't be happier with the result!",
             },
             {
               testimonies:
-                "We commissioned Nyoo Kayu Woodworking to create a wooden playhouse for our kids. It's beautifully made, safe, and has brought endless joy to our children. Outstanding work!",
+                "We commissioned My Feline Woodworking to create a wooden playhouse for our kids. It's beautifully made, safe, and has brought endless joy to our children. Outstanding work!",
             },
             {
               testimonies:
-                "I ordered a custom wooden desk for my home office, and Nyoo Kayu Woodworking delivered exactly what I envisioned. The quality and attention to detail are excellent.",
+                "I ordered a custom wooden desk for my home office, and My Feline Woodworking delivered exactly what I envisioned. The quality and attention to detail are excellent.",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking's custom cutting boards are the best. I ordered several as gifts, and everyone loves them. Beautifully made and very functional!",
+                "My Feline Woodworking's custom cutting boards are the best. I ordered several as gifts, and everyone loves them. Beautifully made and very functional!",
             },
             {
               testimonies:
-                "Our new wooden garden trellis from Nyoo Kayu Woodworking is perfect. It’s sturdy and adds a beautiful touch to our garden. Very happy with the purchase.",
+                "Our new wooden garden trellis from My Feline Woodworking is perfect. It’s sturdy and adds a beautiful touch to our garden. Very happy with the purchase.",
             },
             {
               testimonies:
-                "The handcrafted jewelry box we bought is a piece of art. The detail and finish are remarkable. Nyoo Kayu Woodworking exceeded our expectations!",
+                "The handcrafted jewelry box we bought is a piece of art. The detail and finish are remarkable. My Feline Woodworking exceeded our expectations!",
             },
             {
               testimonies:
-                "Nyoo Kayu Woodworking built a custom media console for us. It's stylish, well-crafted, and fits perfectly in our living room. Fantastic job!",
+                "My Feline Woodworking built a custom media console for us. It's stylish, well-crafted, and fits perfectly in our living room. Fantastic job!",
             },
             {
               testimonies:
-                "We had Nyoo Kayu Woodworking repair an old wooden gate, and it looks like new again. Their repair service is top-notch!",
+                "We had My Feline Woodworking repair an old wooden gate, and it looks like new again. Their repair service is top-notch!",
             },
             {
               testimonies:
-                "Our custom wooden headboard from Nyoo Kayu Woodworking has transformed our bedroom. It's beautifully crafted and exactly what we wanted. Highly recommended!",
+                "Our custom wooden headboard from My Feline Woodworking has transformed our bedroom. It's beautifully crafted and exactly what we wanted. Highly recommended!",
             },
           ];
 
@@ -226,7 +226,8 @@ export function RandomUserProvider({ children }: { children: ReactNode }) {
         setTestimonies,
         teams,
         setTeams,
-      }}>
+      }}
+    >
       {children}
     </RandomUserContext.Provider>
   );

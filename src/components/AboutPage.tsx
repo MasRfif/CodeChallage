@@ -10,7 +10,8 @@ export default function AboutPage() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-          }}>
+          }}
+        >
           <div className="hero-overlay h-screen dark:bg-[#421608]/65 md:p-5 rounded-b-[50px] bg-gradient-to-t from-transparent/5 via-transparent to-amber-900/95">
             <div className="text-neutral-content p-10  h-full relative">
               <div className="absolute bottom-5 left-5 text-[#f8993f] ">
@@ -29,8 +30,8 @@ export default function AboutPage() {
       </section>
       <div className="about-page px-4 py-8 max-w-screen-md mx-auto">
         <section className="story mt-12">
-          <h2 className="text-2xl font-semibold">Our Story</h2>
-          <p className="mt-4">
+          <h2 className="text-4xl font-bold">Our Story</h2>
+          <p className="mt-4 text-base md:text-2xl ">
             Our journey began in Jakarta, Lebak Bulus No. 36B, where we aimed to
             create a unique and delightful experience for cat lovers. We started
             by offering high-quality toys and food, catering to the specific
@@ -43,16 +44,16 @@ export default function AboutPage() {
 
         <section className="vision-mission mt-12 flex flex-col sm:flex-row">
           <div className="vision sm:w-1/2 sm:pr-4">
-            <h3 className="text-xl font-semibold">Vision</h3>
-            <p className="mt-4">
+            <h3 className="text-4xl font-bold">Vision</h3>
+            <p className="mt-4 text-base md:text-2xl">
               To be the leading provider of cat-centric products and services,
               empowering cat lovers to create a happy and healthy living
               environment.
             </p>
           </div>
           <div className="mission sm:w-1/2 sm:pl-4 mt-6 sm:mt-0">
-            <h3 className="text-xl font-semibold">Mission</h3>
-            <ul className="list-disc mt-4 pl-4">
+            <h3 className="text-4xl font-bold">Mission</h3>
+            <ul className="list-disc mt-4 pl-4 text-base md:text-2xl">
               <li>
                 Provide high-quality products and services tailored to cat needs
               </li>
@@ -64,12 +65,12 @@ export default function AboutPage() {
 
         <section className="address-history mt-12 flex flex-col sm:flex-row">
           <div className="address sm:w-1/2 sm:pr-4">
-            <h3 className="text-xl font-semibold">Address</h3>
-            <p className="mt-4">Jakarta, Lebak Bulus No. 36B</p>
+            <h3 className="text-4xl font-bold">Address</h3>
+            <p className="mt-4 text-2xl">Jakarta, Lebak Bulus No. 36B</p>
           </div>
           <div className="history sm:w-1/2 sm:pl-4 mt-6 sm:mt-0">
-            <h3 className="text-xl font-semibold">History</h3>
-            <p className="mt-4">
+            <h3 className="text-4xl font-bold">History</h3>
+            <p className="mt-4 text-base md:text-2xl">
               Established in 2022, our company has grown from a small local
               business to a global leader in cat-centric products.
             </p>
