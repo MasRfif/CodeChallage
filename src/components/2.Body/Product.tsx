@@ -9,7 +9,7 @@ export default async function Product() {
     });
 
     const response = await client.getEntries({
-      content_type: process.env.CONTENTFUL_CONTENT_TYPE!,
+      content_type: process.env.CONTENTFUL_CONTENT_TYPE_SHOP!,
     });
     const Collection = response.items;
 
