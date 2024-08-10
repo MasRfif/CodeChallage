@@ -1,11 +1,10 @@
-import AboutPage from "@/components/AboutPage";
-import { Testimony } from "@/components/Testimony";
+import AboutPage from "@/components/2.Body/AboutPage";
+
 export default function About() {
   return (
     <>
       <section>
         <AboutPage />
-        <Testimony />
       </section>
     </>
   );

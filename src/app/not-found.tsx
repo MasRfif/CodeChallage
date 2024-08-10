@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function NotFound() {
   // return <h1>404</h1>;
   const router = useRouter();
-  const [remainingTime, setRemainingTime] = useState(10);
+  const [remainingTime, setRemainingTime] = useState(5);
   useEffect(() => {
     const timerId = setInterval(() => {
       if (remainingTime > 0) {
@@ -26,12 +26,12 @@ export default function NotFound() {
             what are you Searching m8 ? <br />
             here a <b className="text-9xl">404</b> for you
             <br />
-            you will Spawn in : {remainingTime}
+            you will Be sent to to Spawn in : {remainingTime}
           </h1>
 
           <img
             className="mx-auto mt-4 rounded-xl"
-            src="https://media1.tenor.com/m/wy2zHeWyf2gAAAAd/side-eye-dog-suspicious-look.gif"
+            src="https://media.tenor.com/hUBXfYvvOlUAAAAC/sus-suspicious.gif"
             alt="what the dog doin"
           />
         </div>

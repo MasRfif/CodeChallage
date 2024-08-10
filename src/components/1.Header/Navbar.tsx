@@ -1,6 +1,6 @@
 "use client";
 
-import Logo from "./Logo-icon";
+import Logo from "../Logo-icon";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import "animate.css";
@@ -31,8 +31,7 @@ export default function NavBar() {
         <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
+            className="flex items-center space-x-3 rtl:space-x-reverse">
             <Logo className="h-10" />
             <span className="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-[#fffbeb]">
               PurrfectPaws
@@ -41,23 +40,20 @@ export default function NavBar() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              className="text-[#fffbeb] bg-orange-950 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-950 dark:hover:bg-amber-700 dark:focus:ring-yellow-900"
-            >
+              className="text-[#fffbeb] bg-orange-950 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-950 dark:hover:bg-amber-700 dark:focus:ring-yellow-900">
               Login
             </button>
             <button
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-amber-950 dark:focus:ring-gray-600"
-              onClick={() => setIsOpen(!isOpen)}
-            >
+              onClick={() => setIsOpen(!isOpen)}>
               <span className="sr-only">Open main menu</span>
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 17 14"
-              >
+                viewBox="0 0 17 14">
                 <path
                   stroke="currentColor"
                   strokeLinecap="round"
@@ -75,16 +71,14 @@ export default function NavBar() {
     rounded-md bg-amber-800 shadow-lg ring-1 
     focus:outline-none overflow-hidden overflow-y-auto
     sm:left-auto sm:right-0 sm:ml-auto sm:mr-0
-  `}
-            >
+  `}>
               <div role="none">
                 <ul className="block font-medium dropdown-content rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row  md:border-0 bg-transparent">
                   {navLinks.map((menu, index) => (
                     <li key={index} className="flex items-center">
                       <Link
                         href={menu.href}
-                        className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}
-                      >
+                        className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}>
                         {menu.name}
                       </Link>
                     </li>
@@ -100,8 +94,7 @@ export default function NavBar() {
                 <li key={index} className="flex items-center">
                   <Link
                     href={menu.href}
-                    className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}
-                  >
+                    className={`py-2 px-3 md:p-0 text-white md:bg-transparent md:text-white md:dark:text-white hover:bg-transparent hover:text-yellow-950 transition duration-300 ease-in-out`}>
                     {menu.name}
                   </Link>
                 </li>
