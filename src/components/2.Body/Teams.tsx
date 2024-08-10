@@ -29,38 +29,40 @@ export default async function Teams() {
           </div>
         </div>
         <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[400px_minmax(20px,_0.3fr)_400px]  gap-4 justify-center p-2 m-2 justify-items-center ">
-          <div className="p-4">
-            <div className="card w-[300px] h-[400px] bg-[#6a4124] flex flex-col items-center p-5 overflow-hidden group ">
-              {Collection.map((Prop) => {
-                return (
-                  <section key={Prop.sys.id}>
-                    <div className="relative w-full h-[250px]">
-                      <Image
-                        src={`https:${Prop.fields.photoProfile.fields.file.url}`}
-                        width={300}
-                        height={250}
-                        alt="Card Image"
-                        className="w-full h-full object-cover rounded-lg bg-black"
-                      />
-                    </div>
+          {Collection.map((Prop) => {
+            return (
+              <div className="p-4" key={Prop.sys.id}>
+                <div className="card w-[300px] h-[400px] bg-[#6a4124] flex flex-col items-center p-5 overflow-hidden group ">
+                  <div className="relative w-full  h-[250px]">
+                    <Image
+                      src={
+                        Prop.fields.photoProfile?.fields?.file?.url
+                          ? `https:${Prop.fields.photoProfile.fields.file.url}`
+                          : ""
+                      }
+                      width={300}
+                      height={250}
+                      alt="Card Image"
+                      className="w-full h-full object-cover rounded-lg bg-black"
+                    />
+                  </div>
 
-                    <div className="pt-3">
-                      <h1 className="text-white text-2xl font-bold text-center pb-4 ">
-                        {Prop.fields.teamName}
-                      </h1>
+                  <div className="pt-3">
+                    <h1 className="text-white text-2xl rounded-xl font-bold text-center border-slate-950 border border-spacing-0 ">
+                      {Prop.fields.teamName?.toString()}
+                    </h1>
 
-                      <p className="text-white text-base text-center text-lg font-semibold ">
-                        {Prop.fields.jobTitle}
-                      </p>
-                      <p className="text-white text-base text-center text-sm ">
-                        {Prop.fields.jobDesc}
-                      </p>
-                    </div>
-                  </section>
-                );
-              })}
-            </div>
-          </div>
+                    <p className="text-white text-base pt-2 text-center text-base-lg font-semibold ">
+                      {Prop.fields.jobTitle?.toString()}
+                    </p>
+                    <p className="text-white text-base text-center text-base-sm ">
+                      {Prop.fields.jobDesc?.toString()}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </section>
       </>
     );

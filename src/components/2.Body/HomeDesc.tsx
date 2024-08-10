@@ -43,7 +43,7 @@ export default function Desc() {
           </a>
         </div>
       </section>
-      <section className=" px-10 pb-10 mx-9 flex w-full flex-col justify-center items-center gap-5 sm:gap-64 sm:flex-row ">
+      <section className="  pb-10 flex w-full flex-col justify-center items-center gap-5 xl:flex-row xl:gap- sm:gap-64 sm:flex-row ">
         <div className="flex flex-col items-center sm:flex-row">
           <div className="carousel rounded-box w-64">
             <div className="carousel-item w-full ">

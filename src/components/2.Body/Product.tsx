@@ -73,14 +73,9 @@ export default async function Product() {
               <div key={prop.sys.id} className="p-4">
                 <div className="card w-[300px] h-[400px] bg-black flex flex-col items-center justify-center group ">
                   <Image
-                    src={
-                      prop.fields.thumbnail &&
-                      prop.fields.thumbnail.fields &&
-                      prop.fields.thumbnail.fields.file &&
-                      `https:${prop.fields.thumbnail.fields.file.url}`
-                    }
-                    width={2880}
-                    height={1100}
+                    src={`https:${prop.fields.featuredImage.fields.file.url}`}
+                    width={280}
+                    height={110}
                     alt="Carousel-1"
                     className="w-full h-full object-cover rounded-xl overflow-hidden"
                     loading="lazy"
