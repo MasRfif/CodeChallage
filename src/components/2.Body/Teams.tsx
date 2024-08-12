@@ -1,5 +1,6 @@
 import { createClient } from "contentful";
 import Image from "next/image";
+import RandomUser from "../4.Function/RandomUser";
 export default async function Teams() {
   try {
     const client = createClient({
@@ -48,7 +49,7 @@ export default async function Teams() {
                   </div>
 
                   <div className="pt-3">
-                    <h1 className="text-white text-2xl rounded-xl font-bold text-center border-slate-950 border border-spacing-0 ">
+                    <h1 className="text-white text-2xl rounded-xl font-bold text-center  ">
                       {Prop.fields.teamName?.toString()}
                     </h1>
 

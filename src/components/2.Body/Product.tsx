@@ -18,38 +18,41 @@ export default async function Product() {
     return (
       <>
         {" "}
-        <section className="">
-          <div className="carousel  w-full h-[770px]">
+        <div className="absolute w-full h-[790px] flex flex-col items-center justify-center text-center text-white text-6xl font-bold">
+          <p>Discover Our Exquisite Collection</p>
+        </div>
+        <section>
+          <div className="carousel  w-full h-[770px]  bg-gradient-to-r from-brown-500 to-brown-300 opacity-50">
             <div
               id="item1"
-              className="carousel-item w-full relative top-0 left-0 w-full h-full bg-gradient-to-r from-brown-500 to-brown-300 opacity-50">
+              className="carousel-item w-full relative top-0 left-0 ">
               <Image
-                src="https://images.unsplash.com/photo-1630549316063-7ae02749d2cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1655992117139-54d5e9068ec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={2880}
                 height={1100}
                 alt="Carousel-1"
-                className="w-full object-fill overflow-hidden"
+                className="w-full object-cover overflow-hidden"
                 loading="lazy"
               />
             </div>
             <div id="item2" className="carousel-item w-full relative">
               <Image
-                src="/Carousel-2.png"
+                src="https://images.unsplash.com/photo-1638826596253-45c356e832bf?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={2880}
                 height={1100}
                 alt="Carousel-2"
-                className="w-full h-full"
+                className="w-full object-cover h-full"
                 loading="lazy"
               />
               <div className="body-text text-center absolute top-0 bottom-0 right-0 left-0 m-auto flex flex-col justify-center items-center"></div>
             </div>
             <div id="item3" className="carousel-item w-full relative">
               <Image
-                src="/Carousel-3.png"
+                src="https://images.unsplash.com/photo-1683871297435-10ec1e7a8a4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={2880}
                 height={1100}
                 alt="Carousel-3"
-                className="w-full h-full"
+                className="w-full object-cover h-full"
                 loading="lazy"
               />
               <div className="body-text text-center absolute top-0 bottom-0 right-0 left-0 m-auto flex flex-col justify-center items-center"></div>
@@ -93,9 +96,11 @@ export default async function Product() {
                     </div>
                   </div>
                 </div>
-                <p className=" flex justify-center pt-4 text-white opacity-100 hover:opacity-0 transition duration-300">
-                  product
-                </p>
+                {typeof prop.fields.productName === "string" && (
+                  <h1 className=" flex justify-center pt-4 text-white opacity-100 hover:opacity-0 transition duration-300">
+                    {prop.fields.productName}
+                  </h1>
+                )}
               </div>
             );
           })}

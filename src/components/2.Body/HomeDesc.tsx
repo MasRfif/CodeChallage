@@ -1,3 +1,5 @@
+import Carousel from "../4.Function/Autoplay";
+import Testimony from "./Testimoney";
 export default function Desc() {
   return (
     <>
@@ -43,59 +45,9 @@ export default function Desc() {
           </a>
         </div>
       </section>
-      <section className="  pb-10 flex w-full flex-col justify-center items-center gap-5 xl:flex-row xl:gap- sm:gap-64 sm:flex-row ">
+      <section className="  pb-10 flex w-full flex-col justify-center items-center gap-5 2xl:flex-row xl:flex-col md:flex-col sm:gap-9 sm:flex-row ">
         <div className="flex flex-col items-center sm:flex-row">
-          <div className="carousel rounded-box w-64">
-            <div className="carousel-item w-full ">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-            <div className="carousel-item w-full">
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
-              />
-            </div>
-          </div>
+          <Carousel />
           <div className="p-5 pr-5 max-w-md ">
             <h1 className="text-2xl p-2 font-bold text-[#ead19f]">
               Toy Product
@@ -175,6 +127,9 @@ export default function Desc() {
             </p>
           </div>
         </div>
+      </section>
+      <section>
+        <Testimony />
       </section>
       <section className="location w-full h-full py-10">
         <div className="max-w-lg font-cousine me-0 text-center md:text-start md:me-auto md:mx-20 mb-2">
