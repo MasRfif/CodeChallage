@@ -28,7 +28,7 @@ export default async function Product() {
                 width={2880}
                 height={1100}
                 alt="Carousel-1"
-                className="w-full object-cover overflow-hidden"
+                className="w-full object-fill overflow-hidden"
                 loading="lazy"
               />
             </div>
@@ -71,17 +71,17 @@ export default async function Product() {
           {Collection.map((prop) => {
             return (
               <div key={prop.sys.id} className="p-4">
-                <div className="card w-[300px] h-[400px] bg-black flex flex-col items-center justify-center group ">
+                <div className="card w-[300px] h-[400px] bg-white flex flex-col items-center justify-center group ">
                   <Image
                     src={`https:${prop.fields.featuredImage.fields.file.url}`}
                     width={280}
                     height={110}
                     alt="Carousel-1"
-                    className="w-full h-full object-cover rounded-xl overflow-hidden"
+                    className="w-full h-full object-contain rounded-xl overflow-hidden"
                     loading="lazy"
                   />
-                  <div className="text-white text-xl font-bold text-center absolute h-full w-full  opacity-0 group-hover:opacity-100 transition duration-300 group-hover:bg-[#633b24]/50">
-                    <div className="text-white text-xl font-bold text-center absolute h-full w-full flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 group-hover:bg-[#633b24]/50">
+                  <div className="text-white text-xl font-bold text-center absolute h-full w-full  opacity-0 group-hover:opacity-100 transition duration-300 ">
+                    <div className="text-white text-xl font-bold text-center absolute h-full w-full flex flex-col justify-center items-center opacity-0 rounded-xl group-hover:opacity-100 transition duration-300 group-hover:bg-[#633b24]/50">
                       {typeof prop.fields.productName === "string" && (
                         <h1>{prop.fields.productName}</h1>
                       )}
@@ -93,6 +93,9 @@ export default async function Product() {
                     </div>
                   </div>
                 </div>
+                <p className=" flex justify-center pt-4 text-white opacity-100 hover:opacity-0 transition duration-300">
+                  product
+                </p>
               </div>
             );
           })}

@@ -2,29 +2,29 @@ export default function Desc() {
   return (
     <>
       <section className="py-10 hidden sm:block">
-        <div className="carousel w-full rounded-3xl ">
+        <div className="carousel w-full h-96 rounded-3xl ">
           <div id="item1" className="carousel-item w-full">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-              className="w-full"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg"
+              className="w-full object-cover "
             />
           </div>
           <div id="item2" className="carousel-item w-full">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-              className="w-full"
+              src="https://static.scientificamerican.com/sciam/cache/file/825ED237-152D-4AA0-AB74012B103ECD6C_source.png?w=1200"
+              className="w-full object-cover "
             />
           </div>
           <div id="item3" className="carousel-item w-full">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-              className="w-full"
+              src="https://diamondpet.storage.googleapis.com/wp-content/uploads/2016/09/22100517/20160927-PlayKitty_1200x630.jpg"
+              className="w-full object-cover "
             />
           </div>
           <div id="item4" className="carousel-item w-full">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-              className="w-full"
+              src="https://today.tamu.edu/wp-content/uploads/2024/01/cat-eating.jpg"
+              className="w-full object-cover  "
             />
           </div>
         </div>
