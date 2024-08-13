@@ -37,8 +37,8 @@ export default async function Teams() {
                   <div className="relative w-full  h-[250px]">
                     <Image
                       src={
-                        Prop.fields.photoProfile?.fields?.file?.url
-                          ? `https:${Prop.fields.photoProfile.fields.file.url}`
+                        Prop.fields.photoProfile?.fields?.file.url
+                          ? `https:${Prop.fields.photoProfile.fields?.file.url}`
                           : ""
                       }
                       width={300}

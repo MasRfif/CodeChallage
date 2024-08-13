@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const Carousel = () => {
+const CarouselToys = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
@@ -16,13 +16,13 @@ const Carousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % images.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [currentIndex, images]);
 
   return (
-    <div className="carousel rounded-box w-64">
+    <div className="carousel max-h-[450px] rounded-box max-w-[350px]">
       <div className="carousel-inner relative overflow-hidden w-full">
         <div
           className="flex transition duration-500 ease-in-out"
@@ -43,4 +43,4 @@ const Carousel = () => {
     </div>
   );
 };
-export default Carousel;
+export default CarouselToys;
