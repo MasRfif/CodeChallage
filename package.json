@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "types:contentful": "cf-content-types-generator --spaceId u2i65sxny0qa --token CFPAT-rbjNhWcNPTr9ElwoGomlDonUTKnjMgJqBIJkqAnxT-I -o src/contentful/types -X && prettier --write src/contentful/types"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
