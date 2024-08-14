@@ -32,6 +32,8 @@ export default function NotFound() {
             className="mx-auto mt-4 rounded-xl"
             src="https://media.tenor.com/hUBXfYvvOlUAAAAC/sus-suspicious.gif"
             alt="what the dog doin"
+            width={500}
+            height={500}
           />
         </div>
       </div>
