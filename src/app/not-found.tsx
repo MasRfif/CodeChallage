@@ -1,9 +1,8 @@
 "use client";
-
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 export default function NotFound() {
-  // return <h1>404</h1>;
   const router = useRouter();
   const [remainingTime, setRemainingTime] = useState(5);
   useEffect(() => {
@@ -29,7 +28,7 @@ export default function NotFound() {
             you will Be sent to to Spawn in : {remainingTime}
           </h1>
 
-          <img
+          <Image
             className="mx-auto mt-4 rounded-xl"
             src="https://media.tenor.com/hUBXfYvvOlUAAAAC/sus-suspicious.gif"
             alt="what the dog doin"

@@ -5,6 +5,7 @@ import CarouselToys from "../4.Function/AutoplayToys";
 import Testimony from "./Testimoney";
 import { Provider } from "react-redux";
 import { store } from "@/app/Store";
+import Image from "next/image";
 export default function Desc() {
   return (
     <>
@@ -12,16 +13,32 @@ export default function Desc() {
         <section className="py-10 hidden sm:block">
           <div className="carousel w-full h-96 rounded-3xl ">
             <div id="item1" className="carousel-item w-full">
-              <img src="cathomedesc1.jpg" className="w-full object-cover " />
+              <Image
+                src="cathomedesc1.jpg"
+                alt="Carousel Image 1"
+                className="w-full object-cover"
+              />
             </div>
             <div id="item2" className="carousel-item w-full">
-              <img src="cathomedesc2.jpeg" className="w-full object-cover " />
+              <Image
+                src="cathomedesc2.jpeg"
+                alt="Carousel Image 2"
+                className="w-full object-cover"
+              />
             </div>
             <div id="item3" className="carousel-item w-full">
-              <img src="cathomedesc3.jpg" className="w-full object-cover " />
+              <Image
+                src="cathomedesc3.jpg"
+                alt="Carousel Image 3"
+                className="w-full object-cover"
+              />
             </div>
             <div id="item4" className="carousel-item w-full">
-              <img src="cathomedesc4.jpg" className="w-full object-cover  " />
+              <Image
+                src="cathomedesc4.jpg"
+                alt="Carousel Image 4"
+                className="w-full object-cover"
+              />
             </div>
           </div>
           <div className="flex w-full justify-center gap-2 py-2">

@@ -22,14 +22,14 @@ export default function Hero() {
                 Cats love toys! They provide mental stimulation and help develop
                 problem-solving skills. A well-chosen toy can make your cat feel
                 loved and secure. In fact, research has shown that toys can even
-                improve a cat's memory and cognitive abilities. Some popular toy
+                improve a cats memory and cognitive abilities. Some popular toy
                 types for cats include interactive toys like feather boas, rope
                 toys, and tug toys. These toys can help keep your cat engaged
                 and entertained, while also providing them with the mental
                 stimulation they need.
               </p>
               <button className="btn text-[#fffbeb] bg-[#904210] text-md sm:text-xl md:text-2xl lg:text-md animate__animated animate__zoomInLeft animate__delay-4s ">
-                <Link href={"/Product"}>curious ? let's start buying</Link>
+                <Link href={"/Product"}>curious ? lets start buying</Link>
               </button>
             </div>
           </div>

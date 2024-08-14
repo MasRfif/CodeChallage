@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const CarouselFood = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +28,7 @@ const CarouselFood = () => {
           }}>
           {imagesFood.map((image, index) => (
             <div key={index} className="carousel-item w-full">
-              <img
+              <Image
                 src={image}
                 className="w-full object-cover"
                 alt="Tailwind CSS Carousel component"
