@@ -20,7 +20,7 @@ const CarouselFood = () => {
     }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, [currentIndex, imagesFood.length]); // Include imagesFood.length in the dependency array
 
   return (
     <div className="carousel max-h-[450px] rounded-box max-w-[350px]">
