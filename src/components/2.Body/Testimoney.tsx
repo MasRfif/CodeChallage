@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers } from "../../app/Feature/userSlice";
+import { fetchUsers } from "../../app/feature/userSlice";
 import { useEffect, useState } from "react";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 import Image from "next/image";

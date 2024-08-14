@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { createClient } from "contentful";
+import { TypeProductSkeleton, ProductImage } from "../Contentful/types";
 
 export default async function Product() {
   try {
@@ -8,7 +9,7 @@ export default async function Product() {
       accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
     });
 
-    const response = await client.getEntries({
+    const response = await client.getEntries<TypeProductSkeleton>({
       content_type: process.env.CONTENTFUL_CONTENT_TYPE_SHOP!,
     });
     const Collection = response.items;
@@ -72,11 +73,12 @@ export default async function Product() {
         </section>
         <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[400px_minmax(20px,_0.3fr)_400px]  gap-4 justify-center p-2 m-2 justify-items-center ">
           {Collection.map((prop) => {
+            const ProdImage = prop.fields.featuredImage as ProductImage;
             return (
               <div key={prop.sys.id} className="p-4">
                 <div className="card w-[300px] h-[400px] bg-white flex flex-col items-center justify-center group ">
                   <Image
-                    src={`https:${prop.fields.featuredImage?.fields.file.url}`}
+                    src={`https:${ProdImage.fields?.file?.url}`}
                     width={280}
                     height={110}
                     alt="Carousel-1"
