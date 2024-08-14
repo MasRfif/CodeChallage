@@ -1,25 +1,21 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const CarouselToys = () => {
+const CarouselFood = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-    "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
-    "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-    "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
-    "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
-    "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
+  const imagesFood = [
+    "https://headsupfortails.com/cdn/shop/files/WhiskasOceanFishAdultDryCatFood_f5bbf1f9-31dd-433e-99bd-00582d979f60.jpg?v=1715949708",
+    "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//109/MTA-8789194/me-o_meo_cat_food_persian_me-o_makanan_kucing_7_kg_full01_qrj54xbr.jpg",
+    "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/8/2/c5aceceb-9980-4b13-88d6-02d6a5da75a8.jpg",
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((currentIndex + 1) % images.length);
-    }, 3000);
+      setCurrentIndex((currentIndex + 1) % imagesFood.length);
+    }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [currentIndex, images]);
+  }, [currentIndex, imagesFood]);
 
   return (
     <div className="carousel max-h-[450px] rounded-box max-w-[350px]">
@@ -29,11 +25,11 @@ const CarouselToys = () => {
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
           }}>
-          {images.map((image, index) => (
+          {imagesFood.map((image, index) => (
             <div key={index} className="carousel-item w-full">
               <img
                 src={image}
-                className="w-full"
+                className="w-full object-cover"
                 alt="Tailwind CSS Carousel component"
               />
             </div>
@@ -43,4 +39,4 @@ const CarouselToys = () => {
     </div>
   );
 };
-export default CarouselToys;
+export default CarouselFood;

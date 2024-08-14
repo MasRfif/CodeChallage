@@ -76,7 +76,7 @@ export default async function Product() {
               <div key={prop.sys.id} className="p-4">
                 <div className="card w-[300px] h-[400px] bg-white flex flex-col items-center justify-center group ">
                   <Image
-                    src={`https:${prop.fields.featuredImage.fields.file.url}`}
+                    src={`https:${prop.fields.featuredImage?.fields.file.url}`}
                     width={280}
                     height={110}
                     alt="Carousel-1"
@@ -97,7 +97,7 @@ export default async function Product() {
                   </div>
                 </div>
                 {typeof prop.fields.productName === "string" && (
-                  <h1 className=" flex justify-center pt-4 text-white opacity-100 hover:opacity-0 transition duration-300">
+                  <h1 className=" flex justify-center pt-4 font-bold text-white opacity-100 hover:opacity-0 transition duration-300">
                     {prop.fields.productName}
                   </h1>
                 )}

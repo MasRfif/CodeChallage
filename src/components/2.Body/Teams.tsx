@@ -1,6 +1,5 @@
 import { createClient } from "contentful";
 import Image from "next/image";
-import RandomUser from "../4.Function/RandomUser";
 export default async function Teams() {
   try {
     const client = createClient({

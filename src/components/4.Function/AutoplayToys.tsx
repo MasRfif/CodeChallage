@@ -1,25 +1,21 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const Carousel = () => {
+const CarouselToys = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-    "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
-    "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-    "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
-    "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
-    "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
+  const imagesToys = [
+    "https://images-cdn.ubuy.co.id/63b0ecdf70341422617149a5-podoo-3-pack-of-catnip-toys-teeth.jpg",
+    "https://m.media-amazon.com/images/I/71eYpjdkSPL.jpg",
+    "https://i5.walmartimages.com/asr/eba535e9-735e-43e6-9f4e-b798542d5e9e.6d47cd4fead4623d03b28291d022a40f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((currentIndex + 1) % images.length);
+      setCurrentIndex((currentIndex + 1) % imagesToys.length);
     }, 4000);
 
     return () => clearInterval(intervalId);
-  }, [currentIndex, images]);
+  }, [currentIndex, imagesToys]);
 
   return (
     <div className="carousel max-h-[450px] rounded-box max-w-[350px]">
@@ -29,7 +25,7 @@ const Carousel = () => {
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
           }}>
-          {images.map((image, index) => (
+          {imagesToys.map((image, index) => (
             <div key={index} className="carousel-item w-full">
               <img
                 src={image}
@@ -43,4 +39,4 @@ const Carousel = () => {
     </div>
   );
 };
-export default Carousel;
+export default CarouselToys;

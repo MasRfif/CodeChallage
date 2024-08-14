@@ -1,7 +1,7 @@
 "use client";
 
-import Carousel from "../4.Function/AutoplayToys";
-import CarouselToys from "../4.Function/AutoplayFood";
+import CarouselFood from "../4.Function/AutoplayFood";
+import CarouselToys from "../4.Function/AutoplayToys";
 import Testimony from "./Testimoney";
 import { Provider } from "react-redux";
 import { store } from "@/app/Store";
@@ -15,13 +15,13 @@ export default function Desc() {
               <img src="cathomedesc1.jpg" className="w-full object-cover " />
             </div>
             <div id="item2" className="carousel-item w-full">
-              <img src="cathomedesc1.jpg" className="w-full object-cover " />
+              <img src="cathomedesc2.jpeg" className="w-full object-cover " />
             </div>
             <div id="item3" className="carousel-item w-full">
-              <img src="cathomedesc1.jpg" className="w-full object-cover " />
+              <img src="cathomedesc3.jpg" className="w-full object-cover " />
             </div>
             <div id="item4" className="carousel-item w-full">
-              <img src="cathomedesc1.jpg" className="w-full object-cover  " />
+              <img src="cathomedesc4.jpg" className="w-full object-cover  " />
             </div>
           </div>
           <div className="flex w-full justify-center gap-2 py-2">
@@ -54,8 +54,8 @@ export default function Desc() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col-reverse items-center sm:flex-row-reverse sm:flex-row">
-            <Carousel />
+          <div className="flex flex-col-reverse items-center sm:flex-row-reverse ">
+            <CarouselFood />
             <div className="p-5 pr-5 max-w-md text-right">
               <h1 className="text-2xl p-2 font-bold text-[#ead19f] sm:font-bold sm:text-[#ead19f]">
                 Food Product
